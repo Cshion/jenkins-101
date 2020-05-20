@@ -40,7 +40,7 @@ wget -O /etc/yum.repos.d/jenkins.repo \
 rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 yum -y update
 yum -y install jenkins java-1.8.0-openjdk-devel maven
-
+sudo systemctl start jenkins
 # 
 SCRIPT
 
